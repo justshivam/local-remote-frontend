@@ -1,11 +1,16 @@
 import axios from "axios";
-import { AXIOS_DEFAULT_CONFIG, DEMO_ROUTES } from "./Constants";
+import { LOCAL_REMOTE_ROUTES } from "./Constants";
+import { LocalRemoteActionRequest } from "./requestTypes/LocalRemoteActionRequest";
 
 
-const testRouteFunction:any = () => {
-    return axios.get(DEMO_ROUTES.TEST_ROUTE, AXIOS_DEFAULT_CONFIG);
+const actionRouteFunction:any = (payload:LocalRemoteActionRequest) => {
+    return axios.get(LOCAL_REMOTE_ROUTES.ACTION, {
+        params: payload
+    }).catch((error:any) => {
+        return error.response
+    });
 }
 
-export const DemoService = {
-    'test': testRouteFunction
+export const LocalRemoteService = {
+    'action': actionRouteFunction
 }

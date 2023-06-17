@@ -1,0 +1,7 @@
+export const PLAY_PAUSE_MUSIC = 'PLAY_PAUSE_MUSIC'
+export const SLEEP_WINDOWS = 'SLEEP_WINDOWS'
+export const VOLUME_UP = 'VOLUME_UP'
+export const VOLUME_DOWN = 'VOLUME_DOWN'
+export const VOLUME_MUTE = 'VOLUME_MUTE'
+export const NEXT_TRACK = 'NEXT_TRACK'
+export const PREVIOUS_TRACK = 'PREVIOUS_TRACK'

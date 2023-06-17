@@ -13,7 +13,8 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       const response = await DemoService.test();
-      setButtonText(response.data);
+      console.log(response.data)
+      setButtonText(response.data.message);
     }
     getData();
   }, []);

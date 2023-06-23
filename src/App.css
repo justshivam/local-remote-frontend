@@ -1,5 +1,17 @@
-html, body {
+html, body, #root {
     height: 100%;
     width: 100%;
     background-color: black !important;
+}
+
+.song-title-text-style {
+    color: #1876d2;
+    font-weight: 600;
+    font-family: serif;
+}
+
+.song-artist-text-style {
+    color: #1876d2;
+    font-weight: 600;
+    font-family: serif;
 }

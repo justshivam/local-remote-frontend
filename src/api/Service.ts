@@ -11,6 +11,13 @@ const actionRouteFunction:any = (payload:LocalRemoteActionRequest) => {
     });
 }
 
+const infoRouteFunction:any = () => {
+    return axios.get(LOCAL_REMOTE_ROUTES.INFO).catch((error:any) => {
+        return error.response
+    })
+}
+
 export const LocalRemoteService = {
-    'action': actionRouteFunction
+    'action': actionRouteFunction,
+    'info': infoRouteFunction
 }

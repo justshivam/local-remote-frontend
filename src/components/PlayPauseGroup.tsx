@@ -24,7 +24,7 @@ export default function PlayPauseGroup(props: PlayPausePanelProps) {
           No Media Playing
         </div>
       )}
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center mt-4">
         <div className="px-4">
           <IconButton
             aria-label="volume-down"

@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# Local Remote Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the forntend of **_<u>Local Remote Project</u>_**. In this project I've created a Local Remote which can be used to control your media on your windows system. This project uses _React, Typescript, Material UI and Bootstrap_ in the frontend and uses _Flask, WinSDK, Dotenv_ in the backend. The frontend and backend communicated using a proxy setup in your setup. You can Run both of the components in your system locally and access it with your local devices using the local IP of the host system. I've made the default port of frontend as 80 so that need of entering the port with IP is eliminated.
 
-## Available Scripts
+**Note: Feel free to drop suggestions as issues.**
 
-In the project directory, you can run:
+## Project Image
+![Local](./images/screenshot.png)
 
-### `npm start`
+## How to run Backend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Follow these steps to run the backend on your local system:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Clone the [local-remote-backend]() in your local system.
+- Open a terminal in the repo directory.
+- Run `python -m venv venv` in the terminal to create a virtual python environment.
+- Run `.\venv\Scripts\activate` to activate the virtual the virtual environment.
+- Run `pip install -r requirements.txt` to install the required libraries.
+- Rename the `.env.example` file as `.env`. (Please avoid changing the PORT in the file)
+- Run `python app.py` in your terminal to start the backend server in your local system.
 
-### `npm test`
+Note: you'll need python properly configured in your system to complete these steps successfully.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to run the Frontend
 
-### `npm run build`
+Follow these steps to run the frontend on your local system:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Clone the [local-remote-frontend]() in your local system.
+- Open a terminal in the repo directory.
+- Run `npm install` to install all the required libraries.
+- Run `npm start` to run the frontend server on your local system.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Note: you'll need node properly configured in your system to complete these steps successfully.

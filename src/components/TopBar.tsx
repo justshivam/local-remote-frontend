@@ -2,14 +2,14 @@ import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import BedtimeIcon from "@mui/icons-material/Bedtime";
 import IconButton from "@mui/material/IconButton";
 import TopBarProps from '../types/TopBarProps';
-import { VOLUME_MUTE } from '../constants';
+import { SLEEP_WINDOWS, VOLUME_MUTE } from '../constants';
 
 const TopBar = (props: TopBarProps) => {
   return (
     <div className="d-flex justify-content-between p-5 px-5">
         <IconButton
           aria-label="sleep"
-          onClick={() => props.executeCommand('Test')}
+          onClick={() => props.executeCommand(SLEEP_WINDOWS)}
         >
           <BedtimeIcon color="primary" fontSize="large" />
         </IconButton>
